@@ -1,2 +1,2 @@
 # location
-Android设备GPS信息读取：Location 和 NMEA
+Android设备GPS信息读取：经纬度 和 NMEA
