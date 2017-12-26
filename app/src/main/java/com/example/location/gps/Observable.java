@@ -35,6 +35,7 @@ public class Observable {
 
     /**
      * 打开GPS
+     * （这个方法在仅在Activity中调用有效）
      */
     public void preomptEnableGps() {
         new AlertDialog.Builder(context).setMessage("是否打开GPS")
