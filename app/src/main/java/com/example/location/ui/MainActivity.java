@@ -22,7 +22,13 @@ public class MainActivity extends AppCompatActivity implements LocationListener,
         tv_lat = (TextView) findViewById(R.id.tv_lat);
         tv_lon = (TextView) findViewById(R.id.tv_lon);
         tv_gnss = (TextView) findViewById(R.id.tv_gnss);
-        gps = new GpsManager.Builder(getApplication()).setProvider("test").setMinTime(5).setMinDistance(5).setLocationListener(this).setNmeaListener(this).builder();
+        gps = new GpsManager.Builder(getApplication())
+            .setProvider("test")
+            .setMinTime(5)
+            .setMinDistance(5)
+            .setLocationListener(this)
+            .setNmeaListener(this)
+            .builder();
         gps.start();
     }
 
